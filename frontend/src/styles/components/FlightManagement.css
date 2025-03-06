@@ -1,0 +1,345 @@
+/* Flight Management Styles */
+.flight-management {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .flight-management-tools {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .search-bar {
+    position: relative;
+    flex-grow: 1;
+  }
+  
+  .search-bar input {
+    width: 100%;
+    padding: 10px 40px 10px 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .search-bar input:focus {
+    outline: none;
+    border-color: #2D4059;
+  }
+  
+  .search-bar i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #a0a0a0;
+  }
+  
+  .flight-actions {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .add-flight-btn,
+  .refresh-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 15px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-flight-btn {
+    background-color: #2D4059;
+    color: white;
+  }
+  
+  .add-flight-btn:hover {
+    background-color: #3F5577;
+  }
+  
+  .refresh-btn {
+    background-color: #f0f0f0;
+    color: #2D4059;
+  }
+  
+  .refresh-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+  
+  .flight-table-container {
+    overflow-x: auto;
+  }
+  
+  .flight-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .flight-table th {
+    background-color: #f8f9fa;
+    color: #2D4059;
+    padding: 12px;
+    text-align: left;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .flight-table td {
+    padding: 12px;
+    border-bottom: 1px solid #e0e0e0;
+    vertical-align: middle;
+  }
+  
+  .flight-table tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .airline-logo {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+    margin-right: 10px;
+    border-radius: 4px;
+  }
+  
+  .airline-name {
+    font-weight: bold;
+    color: #2D4059;
+  }
+  
+  .flight-number {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .flight-route {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .route-cities {
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .action-buttons {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .view-btn,
+  .delete-btn {
+    background: none;
+    border: none;
+    color: #666;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .view-btn:hover {
+    color: #2D4059;
+  }
+  
+  .delete-btn:hover {
+    color: #EA5455;
+  }
+  
+  .status-select {
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .status-scheduled { color: #4CAF50; }
+  .status-cancelled { color: #F44336; }
+  .status-delayed { color: #FF9800; }
+  .status-active { color: #2196F3; }
+  .status-landed { color: #9C27B0; }
+  .status-diverted { color: #795548; }
+  
+  .modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .add-flight-modal,
+  .flight-details-modal {
+    background-color: white;
+    border-radius: 8px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+  
+  .modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .confirmation-modal {
+    max-width: 500px;
+}
+
+.confirmation-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.warning {
+  color: #EA5455;
+  margin-top: 15px;
+  font-weight: bold;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  padding: 15px;
+  border-top: 1px solid #e0e0e0;
+}
+
+.cancel-btn,
+.delete-confirm-btn {
+  padding: 10px 15px;
+  border-radius: 4px;
+}
+
+.cancel-btn {
+  background-color: #f0f0f0;
+  color: #2D4059;
+}
+
+.delete-confirm-btn {
+  background-color: #EA5455;
+  color: white;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.pagination-btn {
+  background-color: #f0f0f0;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.pagination-btn.active,
+.pagination-btn:hover {
+  background-color: #2D4059;
+  color: white;
+}
+
+.no-results {
+  text-align: center;
+  padding: 20px;
+  color: #666;
+}
+
+/* Form Styles for Add/Edit Flight Modal */
+.add-flight-modal form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.form-section {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.form-section h3 {
+  color: #2D4059;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #e0e0e0;
+  padding-bottom: 10px;
+}
+
+.form-row {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.form-group input,
+.form-group select {
+  padding: 10px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+}
+
+.status-select {
+  padding: 10px;
+  border-radius: 4px;
+}
+
+@media (max-width: 768px) {
+  .flight-management {
+    padding: 10px;
+  }
+
+  .flight-management-tools {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .flight-actions {
+    flex-direction: column;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .modal-overlay {
+    padding: 10px;
+  }
+
+  .add-flight-modal,
+  .flight-details-modal {
+    width: 95%;
+    max-height: 95vh;
+  }
+}

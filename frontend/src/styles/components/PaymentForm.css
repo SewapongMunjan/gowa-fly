@@ -1,0 +1,193 @@
+/* Payment Form Styles */
+.payment-form-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .payment-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+  }
+  
+  .payment-method {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 10px;
+  }
+  
+  .payment-method:hover {
+    border-color: #2D4059;
+  }
+  
+  .payment-method.active {
+    border-color: #2D4059;
+    background-color: #f0f3f7;
+  }
+  
+  .payment-icon {
+    font-size: 2rem;
+    color: #2D4059;
+    margin-bottom: 10px;
+  }
+  
+  .payment-label {
+    color: #2D4059;
+    font-weight: 500;
+  }
+  
+  .payment-details {
+    margin-top: 20px;
+  }
+  
+  .credit-card-form,
+  .bank-transfer-form,
+  .promptpay-form {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #666;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #2D4059;
+  }
+  
+  .card-input-wrapper {
+    position: relative;
+  }
+  
+  .card-icons {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 10px;
+    color: #666;
+  }
+  
+  .card-icons i {
+    font-size: 1.5rem;
+  }
+  
+  .payment-info {
+    background-color: #f4f6f9;
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .payment-info i {
+    color: #2D4059;
+    margin-right: 10px;
+  }
+  
+  .bank-accounts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-bottom: 20px;
+  }
+  
+  .bank-account {
+    display: flex;
+    align-items: center;
+    background-color: #f4f6f9;
+    padding: 15px;
+    border-radius: 8px;
+  }
+  
+  .bank-logo {
+    margin-right: 15px;
+  }
+  
+  .bank-logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+  }
+  
+  .transfer-instructions {
+    background-color: #f4f6f9;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .transfer-instructions h3 {
+    color: #2D4059;
+    margin-bottom: 10px;
+  }
+  
+  .transfer-instructions ol {
+    padding-left: 20px;
+    color: #666;
+  }
+  
+  .transfer-instructions li {
+    margin-bottom: 10px;
+  }
+  
+  .promptpay-qr {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .promptpay-qr img {
+    max-width: 250px;
+    margin-bottom: 15px;
+  }
+  
+  .promptpay-id {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .payment-methods {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .payment-method {
+      margin: 0;
+    }
+  
+    .bank-accounts {
+      grid-template-columns: 1fr;
+    }
+  }

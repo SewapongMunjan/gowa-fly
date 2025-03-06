@@ -1,0 +1,232 @@
+/* Dashboard Styles */
+.admin-overview {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .stats-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .stat-card {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .stat-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 15px;
+  }
+  
+  .stat-icon.users {
+    background-color: rgba(45, 64, 89, 0.1);
+    color: #2D4059;
+  }
+  
+  .stat-icon.bookings {
+    background-color: rgba(234, 84, 85, 0.1);
+    color: #EA5455;
+  }
+  
+  .stat-icon.revenue {
+    background-color: rgba(52, 152, 219, 0.1);
+    color: #3498DB;
+  }
+  
+  .stat-icon.pending {
+    background-color: rgba(241, 196, 15, 0.1);
+    color: #F1C40F;
+  }
+  
+  .stat-icon i {
+    font-size: 1.8rem;
+  }
+  
+  .stat-info h3 {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+  }
+  
+  .stat-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2D4059;
+  }
+  
+  .stats-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  .stats-column {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .booking-status-chart .booking-status-bars {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .status-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .status-label {
+    flex: 1;
+    color: #666;
+  }
+  
+  .bar-container {
+    flex: 3;
+    background-color: #f0f0f0;
+    height: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .bar {
+    height: 100%;
+    border-radius: 5px;
+  }
+  
+  .bar.pending { background-color: #F1C40F; }
+  .bar.paid { background-color: #2ECC71; }
+  .bar.cancelled { background-color: #E74C3C; }
+  .bar.completed { background-color: #3498DB; }
+  
+  .status-value {
+    font-weight: bold;
+  }
+  
+  .recent-bookings-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .recent-bookings-table th {
+    text-align: left;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .recent-bookings-table td {
+    padding: 10px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .status-badge {
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+  }
+  
+  .status-badge.pending { 
+    background-color: rgba(241, 196, 15, 0.2);
+    color: #B7950B;
+  }
+  
+  .status-badge.paid { 
+    background-color: rgba(46, 204, 113, 0.2);
+    color: #1D8348;
+  }
+  
+  .status-badge.cancelled { 
+    background-color: rgba(231, 76, 60, 0.2);
+    color: #B03A2E;
+  }
+  
+  .status-badge.completed { 
+    background-color: rgba(52, 152, 219, 0.2);
+    color: #2874A6;
+  }
+  
+  .view-all {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .view-all a {
+    color: #2D4059;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .booking-trends {
+    margin-top: 20px;
+  }
+  
+  .trends-chart .trend-bars {
+    display: flex;
+    align-items: flex-end;
+    height: 200px;
+    gap: 10px;
+  }
+  
+  .trend-bar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  
+  .trend-bar {
+    width: 30px;
+    background-color: #2D4059;
+    border-radius: 5px;
+  }
+  
+  .trend-month {
+    margin-top: 10px;
+    color: #666;
+    font-size: 0.8rem;
+  }
+  
+  .trend-value {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #2D4059;
+  }
+  
+  .no-data {
+    text-align: center;
+    color: #666;
+    padding: 20px;
+  }
+  
+  @media (max-width: 768px) {
+    .stats-row {
+      grid-template-columns: 1fr;
+    }
+  
+    .stats-cards {
+      grid-template-columns: 1fr;
+    }
+  }

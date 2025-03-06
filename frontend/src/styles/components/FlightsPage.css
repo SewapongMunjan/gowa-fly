@@ -1,0 +1,197 @@
+/* Flights Page Styles */
+.flights-page {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+  
+  .flights-page .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .search-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .route-info h1 {
+    color: #2D4059;
+    margin-bottom: 10px;
+  }
+  
+  .date-info {
+    color: #666;
+    margin-bottom: 10px;
+  }
+  
+  .passenger-info {
+    color: #2D4059;
+    font-weight: bold;
+  }
+  
+  .modify-search-btn {
+    background-color: #EA5455;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .modify-search-btn:hover {
+    background-color: #B03A2E;
+  }
+  
+  .search-form-wrapper {
+    margin-bottom: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .flights-container {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    gap: 20px;
+  }
+  
+  .flights-sidebar {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .flights-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    padding: 20px;
+  }
+  
+  .flight-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .tab-btn {
+    flex: 1;
+    padding: 15px;
+    text-align: center;
+    color: #666;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+    position: relative;
+  }
+  
+  .tab-btn.active {
+    color: #2D4059;
+    font-weight: bold;
+    border-bottom-color: #2D4059;
+  }
+  
+  .selected-badge {
+    position: absolute;
+    top: 5px;
+    right: 20px;
+    background-color: #EA5455;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 12px;
+  }
+  
+  .tab-btn:disabled {
+    color: #cccccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    .flights-page .container {
+      padding: 0 10px;
+    }
+  
+    .search-summary {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 10px;
+    }
+  
+    .modify-search-btn {
+      width: 100%;
+    }
+  
+    .flights-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .flight-tabs {
+      flex-direction: column;
+    }
+  
+    .tab-btn {
+      border-bottom: 1px solid #e0e0e0;
+    }
+  
+    .tab-btn.active {
+      border-bottom-color: #2D4059;
+    }
+  
+    .selected-badge {
+      position: static;
+      margin-left: 10px;
+    }
+  }
+  
+  /* Error and Loading States */
+  .flights-page .error-container,
+  .flights-page .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .error-container .error-message {
+    text-align: center;
+    color: #EA5455;
+  }
+  
+  .loading-container .loader {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .loading-container .loader-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #2D4059;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+  }
+  
+  .loading-container .loader-text {
+    margin-top: 15px;
+    color: #666;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }

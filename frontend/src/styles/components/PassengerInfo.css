@@ -1,0 +1,100 @@
+/* Passenger Info Styles */
+.passenger-info-container {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .passenger-form {
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  }
+  
+  .passenger-form h3 {
+    color: #2D4059;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e0e0e0;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  
+  .form-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .form-group label {
+    margin-bottom: 8px;
+    color: #666;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group select {
+    padding: 10px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group select:focus {
+    outline: none;
+    border-color: #2D4059;
+  }
+  
+  .form-hint {
+    font-size: 0.8rem;
+    color: #666;
+    margin-top: 5px;
+  }
+  
+  .passport-section {
+    background-color: #f4f6f9;
+    padding: 15px;
+    border-radius: 4px;
+    margin-top: 20px;
+  }
+  
+  .passport-section h4 {
+    color: #2D4059;
+    margin-bottom: 10px;
+  }
+  
+  .passport-note {
+    color: #EA5455;
+    font-size: 0.8rem;
+    margin-bottom: 15px;
+  }
+  
+  .error-message {
+    color: #EA5455;
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  
+  .passenger-divider {
+    border-bottom: 1px solid #e0e0e0;
+    margin: 20px 0;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    .passenger-form {
+      padding: 15px;
+    }
+  }

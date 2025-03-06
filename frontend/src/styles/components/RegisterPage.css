@@ -1,0 +1,164 @@
+/* Register Page Styles */
+.register-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f6f9;
+    padding: 20px;
+  }
+  
+  .register-container {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+    padding: 40px;
+  }
+  
+  .register-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .register-header h1 {
+    color: #2D4059;
+    margin-bottom: 15px;
+  }
+  
+  .register-header p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  .register-error {
+    background-color: #ffebee;
+    color: #d32f2f;
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .register-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #2D4059;
+    font-weight: 500;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    outline: none;
+    border-color: #2D4059;
+  }
+  
+  .form-checkbox {
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+  }
+  
+  .form-checkbox input {
+    margin-right: 10px;
+  }
+  
+  .form-checkbox a {
+    color: #2D4059;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .form-checkbox a:hover {
+    color: #EA5455;
+  }
+  
+  .form-button {
+    margin-top: 20px;
+  }
+  
+  .register-button {
+    width: 100%;
+    padding: 12px;
+    background-color: #2D4059;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .register-button:hover {
+    background-color: #3F5577;
+  }
+  
+  .register-button:disabled {
+    background-color: #a0a0a0;
+    cursor: not-allowed;
+  }
+  
+  .register-footer {
+    text-align: center;
+    margin-top: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #e0e0e0;
+  }
+  
+  .register-footer p {
+    color: #666;
+  }
+  
+  .login-link {
+    color: #2D4059;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .login-link:hover {
+    color: #EA5455;
+  }
+  
+  @media (max-width: 768px) {
+    .register-container {
+      padding: 30px;
+      max-width: 100%;
+    }
+  
+    .form-row {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    .register-header h1 {
+      font-size: 1.5rem;
+    }
+  
+    .register-header p {
+      font-size: 0.9rem;
+    }
+  }

@@ -1,0 +1,103 @@
+/* Profile Page Styles */
+.profile-page {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .profile-page .container {
+    width: 100%;
+    max-width: 1000px;
+  }
+  
+  .loading-profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    color: #666;
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .profile-page .container {
+      padding: 0 15px;
+    }
+  
+    .loading-profile {
+      font-size: 0.9rem;
+    }
+  }
+  
+  /* Consistent Theming */
+  .profile-page h1,
+  .profile-page h2,
+  .profile-page h3 {
+    color: #2D4059;
+  }
+  
+  .profile-page input {
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    padding: 10px;
+    transition: border-color 0.3s ease;
+  }
+  
+  .profile-page input:focus {
+    outline: none;
+    border-color: #2D4059;
+  }
+  
+  /* Action Buttons */
+  .profile-page .btn {
+    transition: all 0.3s ease;
+  }
+  
+  .profile-page .btn-primary {
+    background-color: #2D4059;
+    color: white;
+  }
+  
+  .profile-page .btn-primary:hover {
+    background-color: #3F5577;
+  }
+  
+  .profile-page .btn-secondary {
+    background-color: #EA5455;
+    color: white;
+  }
+  
+  .profile-page .btn-secondary:hover {
+    background-color: #B03A2E;
+  }
+  
+  /* Error and Success Messages */
+  .profile-page .error-message,
+  .profile-page .success-message {
+    padding: 12px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .profile-page .error-message {
+    background-color: #ffebee;
+    color: #d32f2f;
+  }
+  
+  .profile-page .success-message {
+    background-color: #e6f3e6;
+    color: #2e7d32;
+  }
+  
+  .profile-page .error-message i,
+  .profile-page .success-message i {
+    margin-right: 10px;
+  }

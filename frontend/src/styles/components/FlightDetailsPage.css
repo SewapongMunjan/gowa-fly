@@ -1,0 +1,77 @@
+/* Flight Details Page Styles */
+.flight-details-page {
+    background-color: #f4f6f9;
+    min-height: 100vh;
+    padding: 20px 0;
+  }
+  
+  .flight-details-page .container {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .flight-details-wrapper {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  /* Error Handling */
+  .flight-details-page .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px;
+    text-align: center;
+  }
+  
+  .error-container .error-icon {
+    font-size: 4rem;
+    color: #EA5455;
+    margin-bottom: 20px;
+  }
+  
+  .error-container .error-message {
+    color: #666;
+    max-width: 500px;
+  }
+  
+  .error-container .back-to-flights {
+    margin-top: 20px;
+    background-color: #2D4059;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+  
+  .error-container .back-to-flights:hover {
+    background-color: #3F5577;
+  }
+  
+  /* Loading State */
+  .flight-details-page .loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .flight-details-page {
+      padding: 10px;
+    }
+  
+    .flight-details-page .container {
+      max-width: 100%;
+      padding: 0 10px;
+    }
+  
+    .flight-details-wrapper {
+      border-radius: 0;
+      box-shadow: none;
+    }
+  }
