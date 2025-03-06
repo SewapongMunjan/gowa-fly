@@ -1,0 +1,105 @@
+/* UserManagement.css */
+
+.user-management {
+    padding: var(--spacing-lg);
+    background-color: var(--light-color);
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-md);
+  }
+  
+  .user-management h2 {
+    font-size: var(--font-size-xxl);
+    margin-bottom: var(--spacing-md);
+  }
+  
+  .user-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .user-table th,
+  .user-table td {
+    padding: var(--spacing-sm);
+    text-align: left;
+    border-bottom: 1px solid var(--medium-gray);
+  }
+  
+  .user-table th {
+    font-weight: 600;
+    background-color: var(--light-gray);
+  }
+  
+  .user-table tr:last-child td {
+    border-bottom: none;
+  }
+  
+  .user-table .status-badge {
+    margin-right: var(--spacing-xs);
+  }
+  
+  .search-user {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .search-user input {
+    width: 100%;
+    max-width: 400px;
+    padding: var(--spacing-sm);
+    border: 1px solid var(--medium-gray);
+    border-radius: var(--border-radius-sm);
+  }
+  
+  .user-actions {
+    display: flex;
+    gap: var(--spacing-sm);
+  }
+  
+  .add-user-btn {
+    align-self: flex-start;
+  }
+  
+  /* Add User Modal */
+  .add-user-modal .modal-content {
+    max-width: 600px;
+  }
+  
+  .add-user-modal .form-group {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .add-user-modal .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+  }
+  
+  /* Edit User Modal */
+  .edit-user-modal .modal-content {
+    max-width: 600px;
+  }
+  
+  .edit-user-modal .form-group {
+    margin-bottom: var(--spacing-lg);
+  }
+  
+  .edit-user-modal .form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+  }
+  
+  /* Delete User Modal */
+  .delete-user-modal .modal-content {
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .delete-user-modal .modal-actions {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-sm);
+    margin-top: var(--spacing-lg);
+  }
